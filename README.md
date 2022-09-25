@@ -3,7 +3,7 @@
 This is a test project to check problems with conan recipes.
 
 <p align="center">
-    <a href="https://github.com/paulocoutinhox/conan-cmake-v2/actions/workflows/ios.yml"><img src="https://github.com/paulocoutinhox/conan-cmake-v2/actions/workflows/ios.yml/badge.svg"></a>    
+    <a href="https://github.com/paulocoutinhox/conan-libiconv/actions/workflows/ios.yml"><img src="https://github.com/paulocoutinhox/conan-libiconv/actions/workflows/ios.yml/badge.svg"></a>    
 </p>
 
 ## How to build for iOS

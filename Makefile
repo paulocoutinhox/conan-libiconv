@@ -27,7 +27,10 @@ ios:        ## Setup And Build For iOS.
 	cd conan/darwin-toolchain && \
 		conan create . nativium/stable
 
-	conan install libiconv/1.17@ -pr:b=default -pr:h=conan/profiles/ios_profile -s:h os=iOS -s:h os.version=11.0 -s:h arch=armv7 --build=missing --update
+	rm -rf build
+	mkdir -p build/os-system/os-arch/conan
+
+	cd build/os-system/os-arch/conan && \
+		conan install ../../../../conan/recipe/conanfile.py -pr:b=default -pr:h=../../../../conan/profiles/ios_profile --build=missing --update -s:h build_type=Debug
 
 	@make tree
-	@make build
